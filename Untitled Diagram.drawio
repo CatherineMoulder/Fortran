@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-08T18:27:00.542Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="t9hvmUP3MN0P4CeLfMWS" version="20.2.3" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-08-08T22:39:33.894Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="i3Ii-GA_t7v620C8Wc-k" version="20.2.3" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overview">
     <mxGraphModel dx="1422" dy="832" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -440,10 +440,190 @@
     </mxGraphModel>
   </diagram>
   <diagram id="m07z4--e5DjQ8JFdZMG6" name="Pi M">
-    <mxGraphModel dx="1422" dy="832" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="813" dy="475" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="gd_g8guuEHdCTteimZ2B-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="heVHHDVdQGOHpUNByU-_-1" target="gd_g8guuEHdCTteimZ2B-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="heVHHDVdQGOHpUNByU-_-1" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="322" y="37" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="heVHHDVdQGOHpUNByU-_-2" value="Find Pi M &lt;br&gt;for each molecule" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="337" y="67" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-1" value="do&lt;br&gt;i = 2,&amp;nbsp; total &lt;br&gt;atom number" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="31" y="26" width="120" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-4" target="gd_g8guuEHdCTteimZ2B-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="417" y="290" />
+              <mxPoint x="555" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-4" target="gd_g8guuEHdCTteimZ2B-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-4" value="if&lt;br&gt;mod (i+1, 3)&lt;br&gt;&amp;nbsp;= 0" style="rhombus;whiteSpace=wrap;html=1;verticalAlign=middle;rounded=1;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="357" y="215" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-6" target="gd_g8guuEHdCTteimZ2B-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-6" target="gd_g8guuEHdCTteimZ2B-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-6" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Defines:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: right;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Ow (x, y, z)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: right;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;H1w (x, y, z)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: right;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;H2w (x, y, z)&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="337" y="335" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-8" target="gd_g8guuEHdCTteimZ2B-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-8" target="gd_g8guuEHdCTteimZ2B-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-8" value="Dummy Atom" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="337" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-10" target="gd_g8guuEHdCTteimZ2B-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-10" target="gd_g8guuEHdCTteimZ2B-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-10" value="Molecular&amp;nbsp;&lt;br&gt;Frame&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Dummy%20Atom%22%20style%3D%22shape%3Dprocess%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BbackgroundOutline%3D1%3BlabelBackgroundColor%3Dnone%3BlabelBorderColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22337%22%20y%3D%22440%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="337" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-12" target="gd_g8guuEHdCTteimZ2B-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-12" target="gd_g8guuEHdCTteimZ2B-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-12" value="Euler &lt;br&gt;Angles" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="337" y="640" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-10" target="gd_g8guuEHdCTteimZ2B-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-15" target="gd_g8guuEHdCTteimZ2B-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-15" target="gd_g8guuEHdCTteimZ2B-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-15" value="Polarization&amp;nbsp;&lt;br&gt;Matrix&lt;br&gt;Pi M" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="337" y="810" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-16" target="gd_g8guuEHdCTteimZ2B-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-16" target="gd_g8guuEHdCTteimZ2B-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-16" value="Euler &lt;br&gt;Rotation&lt;br&gt;Matrix" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="337" y="720" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-23" target="gd_g8guuEHdCTteimZ2B-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="555" y="205" />
+              <mxPoint x="417" y="205" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-23" value="i + 1" style="whiteSpace=wrap;html=1;rounded=1;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="530" y="224" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-28" value="Defines: &lt;br&gt;1. O to H1w vector,&lt;br&gt;2. O to H2w vector,&lt;br&gt;3. Norm vector" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="490" y="440" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-30" value="Defines:&amp;nbsp;&lt;br&gt;the axes of the&amp;nbsp;&lt;br&gt;molecular frame&amp;nbsp;&lt;br&gt;for each molecule" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="490" y="540" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-32" value="Defines:&lt;br&gt;1. phi, &lt;br&gt;2. theta, &lt;br&gt;3. psi&amp;nbsp;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="490" y="635" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-34" value="Defines:&lt;br&gt;Euler rotation matrix&lt;br&gt;Inverse Euler rotation matrix" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="490" y="725" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-36" value="Calculates the matrix &lt;br&gt;multiplication for Pi M" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="490" y="820" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-38" value="Pi M total" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="351" y="1010" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-39" target="gd_g8guuEHdCTteimZ2B-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-39" value="Pi M" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="372" y="896" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-46" target="gd_g8guuEHdCTteimZ2B-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-46" value="Center of mass" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="700" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-49" value="Center of mass&lt;br&gt;for each Molecule" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="690" y="790" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-51" target="gd_g8guuEHdCTteimZ2B-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-51" value="j = j +1&lt;br&gt;iterating molecules" style="whiteSpace=wrap;html=1;rounded=1;arcSize=14;strokeWidth=2;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="127" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-53" target="gd_g8guuEHdCTteimZ2B-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-53" value="Pi M total =&lt;br&gt;Pi M total + Pi M" style="whiteSpace=wrap;html=1;rounded=1;arcSize=14;strokeWidth=2;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="127" y="499" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;labelBorderColor=default;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-61" target="gd_g8guuEHdCTteimZ2B-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-61" value="If&amp;nbsp;&lt;br&gt;j &amp;gt;= total&amp;nbsp;&lt;br&gt;molecules" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=14;strokeWidth=2;labelBackgroundColor=default;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="112" y="330" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-65" value="" style="endArrow=classic;html=1;rounded=0;labelBorderColor=default;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="380" as="sourcePoint" />
+            <mxPoint x="350" y="1040" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="58" y="380" />
+              <mxPoint x="58" y="1040" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-66" value="&amp;nbsp;Yes&amp;nbsp;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;labelBackgroundColor=#D4E1F5;labelBorderColor=default;" connectable="0" vertex="1" parent="gd_g8guuEHdCTteimZ2B-65">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-230" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-68" value="&amp;nbsp;No&amp;nbsp;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;labelBackgroundColor=#D4E1F5;labelBorderColor=default;" connectable="0" vertex="1" parent="1">
+          <mxGeometry x="167.19151600684017" y="302.5921737039582" as="geometry">
+            <mxPoint x="325" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-73" value="&amp;nbsp;No&amp;nbsp;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;labelBackgroundColor=#D4E1F5;labelBorderColor=default;" connectable="0" vertex="1" parent="1">
+          <mxGeometry x="-195.99848399315982" y="246.5021737039582" as="geometry">
+            <mxPoint x="325" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-76" value="" style="endArrow=classic;html=1;rounded=0;labelBorderColor=default;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gd_g8guuEHdCTteimZ2B-1" target="heVHHDVdQGOHpUNByU-_-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="151" y="90" as="sourcePoint" />
+            <mxPoint x="251" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gd_g8guuEHdCTteimZ2B-77" value="&amp;nbsp;i &amp;lt; total atom number&amp;nbsp;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;labelBackgroundColor=#D4E1F5;labelBorderColor=default;" connectable="0" vertex="1" parent="gd_g8guuEHdCTteimZ2B-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
