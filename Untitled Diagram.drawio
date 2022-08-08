@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-08T17:00:30.889Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="DlVhLej8frbmW7yJJmnj" version="20.2.3" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-08-08T18:26:26.115Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="yESMKZkXjG55nxJ8bavg" version="20.2.3" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overview">
-    <mxGraphModel dx="2585" dy="1513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="832" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -353,6 +353,89 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="s74436AEZTo64xv2IT8s-1" target="yXSY_Qx83aQ6-41sdzMe-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s74436AEZTo64xv2IT8s-1" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="s74436AEZTo64xv2IT8s-2" value="Read in &lt;br&gt;PDB input file" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="65" y="45" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-1" value="! First do loop that reads in the data from the files.  &#xa;	  do&#xa;		if (i .EQ. 0) then &#xa;		 read(11,fmt=1000, iostat=eof) cryst, pbcx, pbcy, pbcz,angx, angy, angz &#xa;	1000     format(A6,3(3X,F6.3), 3(2X,F5.2))  &#xa;		 write(12,fmt=2000) cryst, pbcx, pbcy, pbcz, angx, angy, angz&#xa;	2000     format(A6,3(3X,F6.3), 3(2X,F5.2))    &#xa;		else if (eof &lt; 0 ) then !exits if failed&#xa;		  exit&#xa;		else &#xa;		 read(11,fmt=3000, iostat=eof) natom, molidx, mname, molid, idx, molnum, x(i), y(i), z(i)&#xa;	3000     format(A6, I5,1X, A4,1X, A3,1X ,A1, I4,4X, 3(F8.3))&#xa;	!         print 3000, natom, molidx, mname, molid, idx, !writing it back out into the test.out file&#xa;	!     &amp; molnum, x(i), y(i), z(i)   &#xa;			if (natom .EQ. &#39;END&#39;) then !is trying to make sure this is only a short amount for testing&#xa;			  exit &#xa;			end if&#xa;		  ! write(12,FMT=4000) &#39;i = &#39;, i, natom, molidx, mname, molid, idx, molnum, x(i), y(i), z(i)&#xa;	! 4000     format(A4, I6, 1X, A4, I7, A5, A4,1X,A1,1X, I4,4X, 3(F8.3))  &#xa;		 &#xa;		 endif&#xa;		i = i + 1&#xa;	  end do  &#xa;	! End initial read/write of the atom positions" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="600" width="510" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="yXSY_Qx83aQ6-41sdzMe-2" target="yXSY_Qx83aQ6-41sdzMe-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-2" value="do" style="rhombus;whiteSpace=wrap;html=1;verticalAlign=middle;rounded=1;arcSize=6;align=center;" vertex="1" parent="1">
+          <mxGeometry x="320" y="25" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="yXSY_Qx83aQ6-41sdzMe-4" target="yXSY_Qx83aQ6-41sdzMe-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="yXSY_Qx83aQ6-41sdzMe-4" target="yXSY_Qx83aQ6-41sdzMe-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="yXSY_Qx83aQ6-41sdzMe-4" target="yXSY_Qx83aQ6-41sdzMe-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-4" value="if&lt;br&gt;i = 0" style="rhombus;whiteSpace=wrap;html=1;verticalAlign=middle;rounded=1;arcSize=6;align=center;" vertex="1" parent="1">
+          <mxGeometry x="323" y="185" width="75" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-6" value="Read PBC&lt;br&gt;Write to file" style="whiteSpace=wrap;html=1;rounded=1;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="438.5" y="195" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="yXSY_Qx83aQ6-41sdzMe-8" target="yXSY_Qx83aQ6-41sdzMe-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="89.5" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-8" value="if&amp;nbsp;&lt;br&gt;eof &amp;lt; 0&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="199.5" y="185" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-12" value="terminates as failed" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="195" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="yXSY_Qx83aQ6-41sdzMe-14" target="yXSY_Qx83aQ6-41sdzMe-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="yXSY_Qx83aQ6-41sdzMe-14" target="yXSY_Qx83aQ6-41sdzMe-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-14" value="Read&amp;nbsp;&lt;br&gt;natom, molidx, mname, molid, idx, molnum, x(i), y(i), z(i)" style="whiteSpace=wrap;html=1;rounded=1;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="300" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBorderColor=default;" edge="1" parent="1" source="yXSY_Qx83aQ6-41sdzMe-19" target="yXSY_Qx83aQ6-41sdzMe-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-19" value="else" style="rhombus;whiteSpace=wrap;html=1;verticalAlign=middle;rounded=1;arcSize=6;align=center;" vertex="1" parent="1">
+          <mxGeometry x="323" y="295" width="75" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-22" value="Write to file is commented out" style="whiteSpace=wrap;html=1;rounded=1;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="90" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="yXSY_Qx83aQ6-41sdzMe-24" target="yXSY_Qx83aQ6-41sdzMe-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-24" value="if&amp;nbsp;&lt;br&gt;natom = END" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="520" y="405" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="yXSY_Qx83aQ6-41sdzMe-26" target="yXSY_Qx83aQ6-41sdzMe-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-26" value="Exit" style="whiteSpace=wrap;html=1;rounded=1;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="705" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBorderColor=default;" edge="1" parent="1" source="yXSY_Qx83aQ6-41sdzMe-28" target="yXSY_Qx83aQ6-41sdzMe-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-28" value="End if" style="whiteSpace=wrap;html=1;rounded=1;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="705" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yXSY_Qx83aQ6-41sdzMe-30" value="End do" style="whiteSpace=wrap;html=1;rounded=1;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="705" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
