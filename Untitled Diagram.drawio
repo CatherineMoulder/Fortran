@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-08T15:12:31.682Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="iWXxKOvZbRdfKbVEAKmE" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-08T15:23:06.651Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="Rh0qcHmWRjE29tLCatAV" version="20.2.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="832" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -33,8 +33,26 @@
         <mxCell id="BzoPtWlY8ugBGljkZ4sm-2" value="Open Files&lt;br&gt;PDB input&lt;br&gt;Outputs" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="130" y="207" width="120" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="BzoPtWlY8ugBGljkZ4sm-11" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="300" width="150" height="90" as="geometry" />
+        </mxCell>
         <mxCell id="BzoPtWlY8ugBGljkZ4sm-10" value="Currently material explicitly stated&lt;br&gt;rather than read in from the input file&lt;br&gt;such as rdf cut off distance, number of&lt;br&gt;molecules and timesteps" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="560" y="50" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BzoPtWlY8ugBGljkZ4sm-12" value="Read in &lt;br&gt;PDB input file" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="355" y="325" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BzoPtWlY8ugBGljkZ4sm-13" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="460" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BzoPtWlY8ugBGljkZ4sm-15" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="620" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BzoPtWlY8ugBGljkZ4sm-17" value="Find Pi M &lt;br&gt;for each molecule" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="345" y="490" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BzoPtWlY8ugBGljkZ4sm-18" value="Find Pi I&lt;br&gt;for each molecule&lt;br&gt;Interaction w/i&lt;br&gt;cutoff distance" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="345" y="630" width="120" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
